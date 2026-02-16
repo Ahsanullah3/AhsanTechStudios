@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="Jun1G6sfp0jrR8ZtoXCMYMms-3SFhEjGgMCMG9tIPxE" />
-    <title>AhsanTechStudios Developer Site</title>
+    <title>AhsanTech Studios | Ultimate Auto Clicker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #0f172a; color: white; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
 </head>
 <body>
-    <h1>AhsanTechStudios Developer Page</h1>
-    <p>This website hosts the app-ads.txt for our mobile applications.</p>
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-bold gradient-text">AhsanTech <span class="text-white">Studios</span></div>
+        <div class="space-x-6 hidden md:block">
+            <a href="#features" class="hover:text-blue-400 transition">Features</a>
+            <a href="/app-ads.txt" class="hover:text-blue-400 transition">app-ads.txt</a>
+            <a href="#" class="px-5 py-2 glass rounded-full hover:bg-white/10 transition">Download</a>
+        </div>
+    </nav>
+
+    <header class="max-w-6xl mx-auto px-6 py-20 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Automate Your Taps with <br><span class="gradient-text">Precision & Speed</span></h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+            The most reliable Auto Clicker for Android. Perfect for gaming, repetitive tasks, and workflow automation. Safe, fast, and easy to use.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <button class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-xl font-bold text-lg transition shadow-lg shadow-blue-500/20">
+                <i class="fab fa-google-play mr-2"></i> Get it on Google Play
+            </button>
+            <a href="#features" class="glass px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition">
+                Explore Features
+            </a>
+        </div>
+    </header>
+
+    <section id="features" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Why Choose Our Clicker?</h2>
+            <div class="h-1 w-20 bg-blue-500 mx-auto"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-3xl hover:translate-y-[-10px] transition duration-300">
+                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-bolt text-blue-400 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Ultra Fast</h3>
+                <p class="text-gray-400">Set intervals as low as 1ms. Experience lightning-fast tapping for any requirement.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl hover:translate-y-[-10px] transition duration-300">
+                <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-crosshairs text-purple-400 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Multi-Target Mode</h3>
+                <p class="text-gray-400">Add multiple points on your screen and set sequences for complex automation.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl hover:translate-y-[-10px] transition duration-300">
+                <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-shield-halved text-green-400 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Anti-Detection</h3>
+                <p class="text-gray-400">Built-in randomized intervals to keep your automation looking human and safe.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 mt-20 p-10 text-center text-gray-500">
+        <p>&copy; 2026 AhsanTech Studios. All rights reserved.</p>
+        <div class="mt-4 space-x-4 text-sm">
+            <a href="/app-ads.txt" class="hover:text-white">App-Ads.txt</a>
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+            <a href="#" class="hover:text-white">Terms of Service</a>
+        </div>
+    </footer>
+
 </body>
 </html>
